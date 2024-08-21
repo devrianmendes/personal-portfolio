@@ -543,12 +543,12 @@ color: var(--cor-fonte-clara);
     margin-top: 1rem;
 }
 
-.project-name-border {
+.effect .project-name-border {
     border-bottom: solid 2px transparent;
     transition: .2s;
 }
 
-.project-name-border:hover {
+.effect:hover .project-name-border {
     border-bottom: solid 2px var(--cor-secundaria);
     transition: .3s;
 }
@@ -644,126 +644,7 @@ color: var(--cor-fonte-clara);
 .fa-github {
     color: #4955E8;
 }
-/* MODAL */
-/* .modal {
-    position: fixed;
-    z-index: 1;
-    left: -100%;
 
-    top: 50%;
-    transform: translate3d(-50%, -50%, 0);
-    width: 80vw;
-    height: auto;
-    overflow: hidden;
-    background-color: #000;
-    transition: .3s ease;
-    border-radius: 4px
-} */
-
-/* .modal-ativo {
-    transition: .3s ease;
-    top: 50%;
-    left: 50%;
-} */
-
-/* .close-modal {
-    width: 1.5rem;
-    height: 1.5rem;
-    position: absolute;
-    right: .1rem;
-    top: .1rem;
-    cursor: pointer;
-    padding: .3rem;
-} */
-
-/* #line-1,
-#line-2 {
-    background-color: var(--cor-secundaria);
-    width: 100%;
-    height: 3px;
-}
-
-#line-1 {
-    transform: rotate(45deg) translate(0.6rem, 0.6rem);
-}
-
-#line-2 {
-    transform: rotate(-45deg) translate(-.5rem, .5rem);
-} */
-
-
-/* .modal img,
-.modal p:nth-child(4),
-br {
-    display: none;
-}
-
-.modal-title {
-    text-transform: uppercase;
-}
-
-.border {
-    margin-top: 1rem;
-    border: 3px solid #ff3d57;
-    position: relative;
-    max-height: 100%;
-}
-
-.borda-1,
-.borda-2,
-.borda-3,
-.borda-4 {
-    position: absolute;
-    background-color: #000;
-}
-
-.borda-1 {
-    width: 200px;
-    height: 7px; 
-    transform: translate3d(0, -4px, 0);
-}
-
-.borda-2 {
-    width: 6px;
-    height: 90px;
-    transform: translate3d(-4px, -4px, 0);
-}
-
-.borda-3 {
-    right: 0px;
-    bottom: 0px;
-    width: 6px;
-    height: 90px;
-    transform: translate3d(5px, 0px, 0);
-}
-
-.borda-4 {
-    bottom: 0px;
-    right: 0px;
-    width: 200px;
-    height: 7px;
-    transform: translate3d(4px,4px, 0);
-}
-
-.modal-content,
-.modal-text {
-    padding: 1rem;
-}
-
-.modal-text p {
-    margin-bottom: 1rem;
-}
-
-.modal-text p:nth-child(2) {
-    margin-bottom: 0rem;
-}
-
-.modal-content strong,
-.modal-content span {
-    color: var(--cor-secundaria);
-    font-size: 1.3rem;
-} */
-/* FIM DO MODAL */
 /* FIM DA SESSÃO ABOUT */
 
 /* SESSÃO PROJECTS */
@@ -810,25 +691,13 @@ br {
     transition: 3s;
 }
 
-/* .project-card {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    bottom: -3rem;
-    opacity: 0;
-    transition: .3s;
+.imgArtelamour {
+    object-position: unset !important;
 }
-
-.project:hover .project-card{
-    opacity: 1;
-    transition: .3s;
-    bottom: 0rem;
-} */
 
 .card-wrapper {
     font: normal 1.1rem/1.5rem  "Ubuntu Mono";
     padding: 1rem;
-    /* line-height: 1.5rem; */
     color: var(--cor-fonte-clara);
     text-align: start;
     transition: .5s;
@@ -1137,26 +1006,7 @@ br {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
     }
-
-    /* .project:nth-child(1) {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
-
-    .project:nth-child(2) {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-    }
-
-    .project:nth-child(3) {
-        grid-column: 3 / 4;
-        grid-row: 1 / 2;
-    }
-
-    .project:nth-child(4) {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-    } */
+    
     .contact-area {
         flex-direction: row;
     }

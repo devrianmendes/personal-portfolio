@@ -7,30 +7,6 @@ function initCursorBlink() {
     setInterval(animaCursor, 500);
 }
 
-function initModal() {
-        const icon = document.querySelectorAll('.icon');
-        const modal = document.querySelectorAll('.modal');
-        const close = document.querySelectorAll('.close-modal');
-    
-        const showModal = (index) => {
-            modal.forEach((item, index) => {
-                modal[index].classList.remove('modal-ativo')  
-            })
-            modal[index].classList.add('modal-ativo');
-            close[index].addEventListener('click', () => {
-                hideModal(index);
-            });
-        }
-        const hideModal = (index) => {
-            modal[index].classList.remove('modal-ativo');
-        }
-        icon.forEach((item, index) => {
-            item.addEventListener('click', () => {
-                showModal(index);
-            });
-        });
-}
-
 function autoResizeTextarea() {
         const txt = document.querySelector('#mensagem');
         const maxLng = txt.getAttribute('maxlength');

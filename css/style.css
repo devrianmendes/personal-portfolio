@@ -532,6 +532,10 @@ color: var(--cor-fonte-clara);
     text-transform: uppercase;
 }
 
+.subtitle {
+    font: bold 1.2rem Ubuntu;
+}
+
 .project-name {
     text-decoration: none;
     font: bold 1.1rem "Ubuntu";
@@ -554,6 +558,12 @@ color: var(--cor-fonte-clara);
     height: 3px;
     background-color: var(--cor-secundaria);
     margin: 0 auto;
+}
+
+.subtitle-divider {
+    width: 4rem;
+    height: 3px;
+    background-color: var(--cor-secundaria);
 }
 
 .inner-about {
@@ -766,8 +776,13 @@ br {
     color: var(--cor-fonte-escura);
 }
 
+.projects .subtitle-wrapper {
+    color: var(--cor-fonte-escura);
+    text-align: start;
+}
+
 .inner-projects {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     text-align: center;
     align-items: center;
     /* gap: .5rem; */
@@ -775,11 +790,11 @@ br {
 }
 
 .project {
-    height: 50vh;
+    height: 300px;
     width: 100%;
     background-color: #111;
     box-shadow: 2px 2px 10px rgb(104, 104, 104);
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
     border-radius: 4px;
 }
 
@@ -1048,8 +1063,8 @@ br {
     .inner-projects {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(1, 300px);
-        gap: 25px;
+        grid-template-rows: auto;
+        gap: 2rem;
     }
 
     .project {
@@ -1113,33 +1128,35 @@ br {
     }
 
     .project {
-        margin-bottom: 0rem;
+        /* margin-bottom: 0rem; */
         min-width: 300px;
+        /* height: 300px; */
     }
 
-    .project:nth-child(1) {
+    .inner-projects {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    /* .project:nth-child(1) {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
-        height: 100%;
     }
 
     .project:nth-child(2) {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
-        height: 100%;
     }
 
     .project:nth-child(3) {
         grid-column: 3 / 4;
         grid-row: 1 / 2;
-        height: 100%;
     }
 
     .project:nth-child(4) {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
-        height: 100%;
-    }
+    } */
     .contact-area {
         flex-direction: row;
     }
@@ -1158,7 +1175,6 @@ br {
 @media (min-width: 1200px) {
 
     .project {
-        
         min-width: 351px;
     }
     .form-wrapper {

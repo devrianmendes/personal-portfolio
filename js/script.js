@@ -35,7 +35,7 @@ function sidebar() {
     }
 
     function closeSidebar() {
-        if(window.innerWidth >= 768) {
+        if(window.innerWidth >= 992) {
             sidebar.classList.remove('show-menu');
             hamburguer.classList.remove('show-menu');
         }

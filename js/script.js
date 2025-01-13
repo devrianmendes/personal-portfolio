@@ -7,6 +7,7 @@ function initCursorBlink() {
     setInterval(animaCursor, 500);
 }
 
+console.log('apsokdpak')
 function autoResizeTextarea() {
         const txt = document.querySelector('#mensagem');
         const maxLng = txt.getAttribute('maxlength');
@@ -35,7 +36,7 @@ function sidebar() {
     }
 
     function closeSidebar() {
-        if(window.innerWidth >= 992) {
+        if(window.innerWidth >= 768) {
             sidebar.classList.remove('show-menu');
             hamburguer.classList.remove('show-menu');
         }
@@ -139,7 +140,6 @@ function borderHeight () {
 }
 
 initCursorBlink();
-initModal();
 autoResizeTextarea();
 sidebar();
 topLink();
